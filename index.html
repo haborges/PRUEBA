@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB de tienda </title>
+    <link rel="stylesheet" href="">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<style>
+    .carousel-control-prev-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+</style>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a href="#" class="navbar-brand">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MenuNave" aria-expanded="false" aria-label="Alternar Menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="MenuNave">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Inicio</a>
+                        </li>
+                        <!--botos desplegable-->
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
+                                Productos
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a href="#" class="dropdown-item">Computadoras</a>
+                                <a href="#" class="dropdown-item">Celulares</a>
+                                <a href="#" class="dropdown-item">Camaras</a>
+                                <a href="#" class="dropdown-item">Laptos</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contactos</a>
+                        </li>
+                    </ul>
+                    <form action="" class="form-inline my-2 my-lg-0">
+                        <input type="text" class="form-control mr-sm-2" type="search" placeholder="¿Qué estas buscando?">
+                        <button class="btn btn-primary my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid">
+
+        <div class"row">
+            <div class="col">
+                <div class="carousel slide" id="slideShow" data-ride="carousel">
+                    <!--indicadores-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#slideShow" data-slide-to="0" class="active"></li>
+                        <li data-target="#slideShow" data-slide-to="1"></li>
+                        <li data-target="#slideShow" data-slide-to="2"></li>
+                    </ol>
+
+                    <!--slides-->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagenes/s1.jpg" class="d-block w-100" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagenes/s2.jpg" class="d-block w-100" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagenes/s3.jpg"  class="d-block w-100" alt="">
+                        </div>
+                    </div>
+                    <!--controles-->
+                    <a href="#slideShow" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a href="#slideShow" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="py-4 border-bottom">
+                    <h1 class="text-center">Galería</h1>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row py-4">
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes/1.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Iphone</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                        <a href="#" class="btn btn-sm btn-secondary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes/2.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Mac</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                        <a href="#" class="btn btn-sm btn-secondary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes/3.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Camaras reflex</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                        <a href="#" class="btn btn-sm btn-secondary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes/4.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Accesorios</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                        <a href="#" class="btn btn-sm btn-secondary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes/5.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Teclados</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                        <a href="#" class="btn btn-sm btn-secondary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes/6.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Ipads</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                        <a href="#" class="btn btn-sm btn-secondary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes/7.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Notebooks</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                        <a href="#" class="btn btn-sm btn-secondary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes/8.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Camaras</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                        <a href="#" class="btn btn-sm btn-secondary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="container">
+        <div class="row border-top py-5">
+            <div class="col">
+                <h3 class="lead">Hernán Borges</h3>
+                <a href="#" class="btn btn-link">Acerca de</a>
+                <a href="#" class="btn btn-link">Contacto</a>
+            </div>
+            <div class="col text-right">
+                <a href="#" class="btn btn-link">Subir en pagina</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
